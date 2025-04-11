@@ -96,6 +96,7 @@ function Routes({ history }) {
 
   return (
     <Router>
+      <link rel="stylesheet" href="https://cdn.svar.dev/fonts/wxi/wx-icons.css" />
       <div className={"wxl-layout" + (noSidebar ? " no-sidebar" : "")}>
         <div
           className={"wxl-sidebar" + (show ? " move" : "")}
