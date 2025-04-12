@@ -15,6 +15,7 @@ export default function GanttDemo({ skinSettings }) {
 				scales={data.scales}
 				taskTypes={taskTypes}
 				api={apiRef}
+				zoom={true}
 			/>
 		</div>
 	);
