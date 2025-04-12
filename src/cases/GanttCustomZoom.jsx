@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { getData, zoomConfig } from "../data";
+import { getData, zoomConfig, simpleColumns } from "../data";
 import { Gantt } from "wx-react-gantt";
 
 export default function GanttChart({ skinSettings }) {
@@ -8,7 +8,6 @@ export default function GanttChart({ skinSettings }) {
 
 	return (
 		<div className="demo-rows">
-			<h4 className='p20'>Point over Gantt chart, then hold Ctrl and use mouse wheel to zoom</h4>
 			<div className="demo-gantt">
 				<Gantt
 					{...skinSettings}
@@ -16,6 +15,7 @@ export default function GanttChart({ skinSettings }) {
 					links={data.links}
 					zoom={zoomConfig}
 					api={apiRef}
+					cellHeight={32}
 				/>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { getTypedData, taskTypes } from "../data";
+import { getTypedData, taskTypes, links } from "../data";
 import { Gantt } from "wx-react-gantt";
 
 export default function GanttDemo({ skinSettings }) {
